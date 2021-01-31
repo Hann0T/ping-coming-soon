@@ -1,0 +1,183 @@
+:root {
+	/* primary */
+	--Blue: hsl(223, 87%, 63%);
+
+	/* secondary */
+	--Pale-Blue: hsl(223, 100%, 88%);
+	--Light-Red: hsl(355, 100%, 66%);
+	/* neutral */
+	--Gray: hsl(0, 0%, 59%);
+	--Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+	font-size: 20px;
+	font-family: 'Libre Franklin', sans-serif;
+	height: 100%;
+	margin: 0;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.ping__header {
+	margin: 50px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+}
+
+.ping__title {
+	color: var(--Gray);
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.title__bold {
+	color: #000;
+	font-weight: 700;
+}
+
+.ping__text {
+	margin-bottom: 30px;
+}
+
+.ping__form {
+	width: 659px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.ping__email {
+	box-sizing: border-box;	
+	width: 300px;
+	padding: 10px 20px;
+	margin-right: 20px;
+	border-radius: 20px;
+	border: 1px solid var(--Gray);
+}
+.ping__email::placeholder {
+	color: var(--Gray);
+}
+.email--error {
+	border-color: var(--Light-Red);
+}
+
+.ping__button {
+	background-color: var(--Blue);
+	border: none;
+	border-radius: 20px;
+	width: 150px;
+	color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.errorMessage {
+	margin: 0;
+	color: var(--Light-Red);
+	font-size: 12px;
+	position: absolute;
+	bottom: -23px;
+	left: 115px;
+}
+
+.ping__thumbnail {
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+
+.thumbnail__dashboard {
+	width: 100%;
+}
+
+.ping__socialMedia {
+	margin-bottom: 20px;
+	display: flex;
+	width: 198px;
+	justify-content: space-around;
+}
+
+.ping__icons {
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--Blue);
+	border-radius: 50%;
+	color: var(--Blue);
+}
+.ping__icons:hover {
+	background-color: var(--Blue);
+	color: #fff;
+}
+
+.ping__copyright {
+	font-size: 14px;
+	color: var(--Gray);
+	margin-bottom: 30px;
+}
+
+
+	/*media queries*/
+
+@media screen and (max-width: 1200px) {
+	
+	.wrapper {
+		box-sizing: border-box;
+		padding: 0 20px;
+	}
+
+	.ping__header {
+		width: 100%;
+	}
+
+	.ping__title {
+		font-size: 24px;
+	}
+
+	.ping__text {
+		font-size: 14px;
+	}
+
+	.ping__form {
+		flex-direction: column;
+	}
+
+	.ping__email {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	.ping__button {
+		width: 100%;
+		padding: 10px 20px;
+	}
+
+	.spaceForMessage {
+		margin-bottom: 50px;
+	}
+
+	.errorMessage {
+		width: 206px;
+		position: relative;
+		bottom: 4px;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-bottom: 30px;
+	}
+
+}
+
+
+
