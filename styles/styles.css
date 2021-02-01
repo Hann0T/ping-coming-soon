@@ -77,7 +77,10 @@ body {
 	border-radius: 20px;
 	width: 150px;
 	color: #fff;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.ping__button:hover {
+	filter: opacity(0.8);
 }
 
 .errorMessage {
@@ -151,6 +154,7 @@ body {
 
 	.ping__form {
 		flex-direction: column;
+		width: 100%;
 	}
 
 	.ping__email {
